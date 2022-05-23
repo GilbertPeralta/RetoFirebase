@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "769932735463",
+    "firebase_url": "https://moviles-2022-primavera-bb4fb-default-rtdb.firebaseio.com",
+    "project_id": "moviles-2022-primavera-bb4fb",
+    "storage_bucket": "moviles-2022-primavera-bb4fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769932735463:android:d2dc56261acab53c538342",
+        "android_client_info": {
+          "package_name": "com.example.basicfirebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769932735463-4285b5277sc24tkkcemlm58aqmcl97ea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAytekritL7lhtEt902Hoj9Vhn5RQDBew4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769932735463-4285b5277sc24tkkcemlm58aqmcl97ea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769932735463:android:f68394bd1a3b59c3538342",
+        "android_client_info": {
+          "package_name": "com.example.retofirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769932735463-4285b5277sc24tkkcemlm58aqmcl97ea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAytekritL7lhtEt902Hoj9Vhn5RQDBew4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769932735463-4285b5277sc24tkkcemlm58aqmcl97ea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

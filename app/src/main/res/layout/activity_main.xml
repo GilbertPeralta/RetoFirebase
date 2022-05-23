@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etId"
+        android:hint="Id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/etTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etYear"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:hint="Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@+id/etId"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etimdbID"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/etYear"
+        android:hint="Year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/etimdbID"
+        app:layout_constraintTop_toBottomOf="@+id/etId"
+        app:layout_constraintBottom_toTopOf="@+id/etType"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/etimdbID"
+        android:hint="imdbID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/etYear"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTitle"
+        app:layout_constraintBottom_toTopOf="@+id/etPoster"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/etType"
+        android:hint="Type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/etPoster"
+        app:layout_constraintTop_toBottomOf="@+id/etYear"
+        app:layout_constraintBottom_toTopOf="@+id/etCountry"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/etPoster"
+        android:hint="Poster"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/etType"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etimdbID"
+        app:layout_constraintBottom_toTopOf="@+id/etGenre"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/etCountry"
+        android:hint="Country"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/etGenre"
+        app:layout_constraintTop_toBottomOf="@+id/etType"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/etGenre"
+        android:hint="Genre"
+        android:textSize="18dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/etCountry"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPoster"
+        app:layout_constraintBottom_toTopOf="@id/btnGuardar"
+        ></EditText>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCountry"
+        app:layout_constraintBottom_toTopOf="@+id/rvMoviesEntries"
+        ></Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMoviesEntries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_movie"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGuardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

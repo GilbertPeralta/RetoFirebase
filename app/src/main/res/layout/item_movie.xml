@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvtagId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvId"
+        app:layout_constraintBottom_toTopOf="@+id/tvtagTitle"
+        app:layout_constraintTop_toBottomOf="parent"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example Id"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvtagId"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="parent"
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/tvtagTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvTitle"
+        app:layout_constraintBottom_toTopOf="@+id/tvtagYear"
+        app:layout_constraintTop_toBottomOf="@id/tvtagId"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example Title"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvtagTitle"
+        app:layout_constraintBottom_toTopOf="@+id/tvYear"
+        app:layout_constraintTop_toBottomOf="@id/tvId"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvtagYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvYear"
+        app:layout_constraintBottom_toTopOf="@+id/tvtagimdbID"
+        app:layout_constraintTop_toBottomOf="@id/tvtagTitle"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example Year"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvtagYear"
+        app:layout_constraintBottom_toTopOf="@+id/tvimdbID"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvtagimdbID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="imdbID:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvimdbID"
+        app:layout_constraintBottom_toTopOf="@+id/tvtagType"
+        app:layout_constraintTop_toBottomOf="@id/tvtagYear"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvimdbID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example imdbID"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvtagimdbID"
+        app:layout_constraintBottom_toTopOf="@+id/tvType"
+        app:layout_constraintTop_toBottomOf="@id/tvYear"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvtagType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvType"
+        app:layout_constraintBottom_toTopOf="@+id/tvtagPoster"
+        app:layout_constraintTop_toBottomOf="@id/tvtagimdbID"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example Type"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvtagType"
+        app:layout_constraintBottom_toTopOf="@+id/tvPoster"
+        app:layout_constraintTop_toBottomOf="@id/tvimdbID"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvtagPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poster:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvPoster"
+        app:layout_constraintBottom_toTopOf="@+id/tvtagCountry"
+        app:layout_constraintTop_toBottomOf="@id/tvtagType"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example Poster"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvtagPoster"
+        app:layout_constraintBottom_toTopOf="@+id/tvCountry"
+        app:layout_constraintTop_toBottomOf="@id/tvType"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvtagCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvCountry"
+        app:layout_constraintBottom_toTopOf="@+id/tvtagGenre"
+        app:layout_constraintTop_toBottomOf="@id/tvtagPoster"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example Country"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvtagCountry"
+        app:layout_constraintBottom_toTopOf="@+id/tvGenre"
+        app:layout_constraintTop_toBottomOf="@id/tvPoster"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvtagGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre:"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvGenre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvtagCountry"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example Genre"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvtagGenre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCountry"
+        ></TextView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
